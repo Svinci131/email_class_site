@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
+    <title>Notes</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='styles/semantic.min.css'>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai.min.css">
+    <link rel='stylesheet' href='styles/main.css'>
+</head>
+<body id="book">
+    <div class="book-wrap">
+        <!--
+        <div class="book-wrap__inner">
+            <h1>Hello, Wrold!</h1>
+        </div>
+        -->
+        <div class="book-wrap__inner">
+            <div class="book__col">
+                <div class="book__colwrap ui menu inverted vertical">
+                    <div class="item colheader colitem">
+                        <h1 class="title colheader__title">DBC INTRO COURSE</h1>
+                        <br>
+                        <div class="description">Email Resources</div>
+                        <br>
+                    </div>
+                    <div class="item item__active">
+                        <b>Class Notes</b>
+                        <div class="menu">
+                            <a class="item">Outline</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                      <!--   <b class="header">Resources</b> -->
+                        <div class="menu">
+                            <a class="item">Web vs Email: Best Practices</a>
+                            <a class="item" target="_blank" href="http://templates.mailchimp.com/resources/email-client-css-support/">Email Client Style Guide</a>
+                            <a class="item">Email Building Programs</a>
+                            <a class="item" target="_blank"  href="http://blog.campaignmaster.co.uk/2013/01/10/email-101-email-safe-fonts/">Email Safe Fonts</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <b class="header">Extra Credit</b>
+                        <div class="menu">
+                            <a class="item">Responsive Emails</a>
+                            <a class="item">Structuing your first project</a>
+                            <a class="item">Forms and RSVPS</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <b class="header">InClass Assignment</b>
+                        <div class="menu">
+                            <a class="item">Overview</a>
+                            <a class="item">Notes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book__content">
+            <div class="main-content" id="notes">
+                <h2>Class Outline</h2>
+                <h3>Over View (est 5-10min)</h3>
+                    <ul>
+                        <li>Take a Poll of Class<br>
+                         (see if people are more interested in learning HTML & CSS, or just how to build emails) </li>
+                        <li>Quickly show some beautiful emails(see here)</li>
+                   </ul>
+                <!-- overview -->
+                <h3>HTML and Layouts (est 30min)</h3>
+                    <!-- <em>how much html do they know?</em> -->
+                    <ul>
+                        <li>Basic Tags: H1, H2, ect.</li>
+                        <li>Web Layouts: Divs, Sections, Articles</li>
+                        <li>Email Layouts: Tables(mention that sometags don't work on email</li>
+                   </ul>
+                <h3 class="webvemail">resources<h3>
+                <strong>Exercise:</strong>
+                <p>Build out an invite using a table or divs</p>
+                <!-- layout -->
+                <h3>Images (est 10min)</h3>
+                    <ul>
+                        <li>When to use images in emails?</li>
+                        <li>File size increases the likelihood of your email being sent as span</li>
+                        <li>All image tag src attributes must have absolute http://... URLs as their values</li>
+                   </ul>
+                   <strong>Exercise:</strong>
+                    <p>Add an image as a banner to the email</p>
+                    <em>*Note never put critical info in an image, use the example of the email banner</em>
+                <!-- imgs -->
+                <h3>Styling part I:Inline Sytle/Basic CSS (est 15 min)</h3>
+                    <ul>
+                        <li>Explain briefly what styles are</li>
+                        </li>
+                        <li>Change the font colors as a class using inline styles</li>
+                    </ul>
+                    <strong>Exercise:</strong>
+                    <p>Have them finish styling the rest of the email</p>
+                <h3>Styling part II:Classes (est 15 min)</h3>
+                <ul>
+                    <li>Go over Classes</li>
+                    <li>Go over the difference between styling for the web vs styling for emails
+                        <ul>
+                            <li>Inline Styles vs Classes </li>
+                            <li>Don’t use anything beyond CSS2 in email</li>
+                            <!-- <li>Email Client Style Guide</li> -->
+                        </ul>
+                    </li>
+                </ul>
+                <!-- styling -->
+                <h3>Testing & Sending/Working with Different Email Clients:  (est 20 min)</h3>
+                    <ul>
+                        <li>Use a free email previewer(probably: https://my.sendinblue.com) to preview email we've been building
+                        </li>
+                        <li>Go over the ways different email clients behave</li>
+                        <li>Give this example:
+                            <ul>
+                                <li>When we preview our email we'll see it looks strange in Outlook</li>
+                                <li>
+                                 This is because we used margin 0 auto, to center everything which Outlook doesn't recognize     
+                                </li>
+                                <li> We could fix this by removing the margin and adding padding left, but then we’ll have less consistency on mobile device. </li>
+                                <li>We could add classes instead of inline styles and add media queries, but sometimes browsers strips out external styles</li> 
+                            </ul> 
+                        </li>
+                    </ul>
+                    <strong>Final Exercise:</strong>
+                    <p>Upload a list(class emails) and send out our email</p>
+            </div>
+            <div class="main-content invisible" id="programs">
+                <h2>List of Email Building Programs</h2>
+                <h3>Free</h3>
+                <ul>
+                    <li>
+                        <a href="https://my.sendinblue.com" target="_blank">
+                        Send in blue
+                        </a>
+                    </li>
+                </ul>
+
+                <h3>Paid</h3>
+            </div>
+<!--                 <div class="main-content">
+                    <h1>
+                        Hello, Wrold!
+                    </h1>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies arcu eget ullamcorper volutpat. Etiam a lorem nec odio commodo consequat. Ut nec enim arcu. Nulla molestie velit a ex hendrerit, ut viverra diam sagittis. Aenean eget efficitur orci, et dignissim ipsum. Sed eu magna magna. Mauris interdum est at maximus dictum.</p>
+                   <h2>This is a second header</h2>
+                   <img src="assets/hero1.png" class="breakout-image">
+                   <ul>
+                        <li>This is a list item</li>
+                        <li>This is a list item</li>
+                   </ul>
+                   <h3>This is a third header</h3>
+                   <div class="image-roll image-roll--three">
+                        <div class="image-roll__col image-roll__col-3">
+                            <div style="background-image: url(https://scontent-iad3-1.cdninstagram.com/hphotos-xta1/t51.2885-15/e15/12142291_998584560163485_1311006870_n.jpg)" class="image-roll__three-left image-roll__img"></div>
+                        </div>
+                        <div class="image-roll__col image-roll__col-1">
+                            <div style="background-image: url(https://scontent-iad3-1.cdninstagram.com/hphotos-xta1/t51.2885-15/e15/12080545_1091355724208100_1758630671_n.jpg)" class="image-roll__three-top image-roll__img"></div>
+                            <div style="background-image: url(https://scontent-iad3-1.cdninstagram.com/hphotos-xap1/t51.2885-15/e15/12145187_923914534351469_902481808_n.jpg)" class="image-roll__three-bottom image-roll__img"></div>
+                        </div>
+                   </div>
+                   <ol>
+                        <li>Wake up</li>
+                        <li>Drank</li>
+                        <li>Push ups</li>
+                        <li>Drank</li>
+                   </ol>
+                   <h4>This is a fourth header</h4>
+                   <h5>This is a fifth header</h5>
+                   <br>
+                   <div class="image-roll image-roll--three breakout-image">
+                        <div class="image-roll__col image-roll__col-1">
+                            <div style="background-image: url(https://scontent-iad3-1.cdninstagram.com/hphotos-xta1/t51.2885-15/e15/12080545_1091355724208100_1758630671_n.jpg)" class="image-roll__three-top image-roll__img"></div>
+                            <div style="background-image: url(https://scontent-iad3-1.cdninstagram.com/hphotos-xap1/t51.2885-15/e15/12145187_923914534351469_902481808_n.jpg)" class="image-roll__three-bottom image-roll__img"></div>
+                        </div>
+                        <div class="image-roll__col image-roll__col-3 image-roll__col-3reverseborder">
+                            <div style="background-image: url(https://scontent-iad3-1.cdninstagram.com/hphotos-xta1/t51.2885-15/e15/12142291_998584560163485_1311006870_n.jpg)" class="image-roll__three-left image-roll__img"></div>
+                        </div>
+                   </div>
+                   <br>
+                   <h6>This is a sixth header</h6>
+                    <blockquote>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                        </p>
+                        <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                    </blockquote>
+                    <h2>Code</h2>
+                    <pre>
+                        <code class="javascript">
+var DeferredFactory = function( func, scope ) {
+    return function() {
+        var d = Q.defer();
+        var args = [].slice.call( arguments );
+        var callback = args.push(function( err, data ) {
+            if ( err ) {
+                throw new Error( err.red );
+            }
+            d.resolve( data );
+        });
+
+        func.apply( scope, args );
+
+        return d.promise;
+    };
+}; -->
+ <!--                        </code>
+                    </pre>
+                    <h2>Samantha</h2>
+                    <iframe src="http://samantha.fewd.us/#/broadcast/mottaquikarim/Race_Cars"></iframe>
+                </div>
+            </div>-->
+      <!--   </div> book col -->
+    </div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+    <script src='javascript/dist/bundle.js'></script>
+</body>
+</html>

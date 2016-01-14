@@ -13,6 +13,11 @@ h1, h2, h3, h4, h5 {
     font-family: 'Fira Sans Medium 500', sans-serif;
     /*font-family: 'Merriweather', serif;*/
 }
+.img-wrapper img {
+    width:48%;
+    vertical-align: top;
+    border: 1px solid black;
+}
 .exercise {
  list-style-type: none
 }

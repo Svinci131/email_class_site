@@ -3,7 +3,9 @@
 <head>
     <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
     <title>Notes</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+   <!--  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='styles/semantic.min.css'>
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai.min.css">
     <link rel='stylesheet' href='styles/main.css'>
@@ -24,19 +26,25 @@
                         <div class="description">Email Resources</div>
                         <br>
                     </div>
-                    <div class="item item__active">
-                        <b>Class Notes</b>
+                    <div class="item">
+                        <b class="header">Class Notes</b>
                         <div class="menu">
-                            <a class="item">Outline</a>
+                            <a class="item"  href="#outline">Outline</a>
+                            <a href="http://svinci131.github.io/email_class_site/example" target="_blank" class="item">In Class Assignment</a>
+                            <a href="https://github.com/Svinci131/email_class_site/blob/master/example.html" target="_blank" class="item">In Class Assignment-code</a>
+
+                            
                         </div>
                     </div>
                     <div class="item">
-                      <!--   <b class="header">Resources</b> -->
+                        <b class="header">Resources</b>
                         <div class="menu">
-                            <a class="item">Web vs Email: Best Practices</a>
+                            <a class="item" href="#webVe">Web vs Email: Best Practices</a>
                             <a class="item" target="_blank" href="http://templates.mailchimp.com/resources/email-client-css-support/">Email Client Style Guide</a>
-                            <a class="item">Email Building Programs</a>
+                            <!-- <a href="#layoutChart" class="item">Table Layout Gra</a> -->
+                            <a href="#programs" class="item">Email Building Programs</a>
                             <a class="item" target="_blank"  href="http://blog.campaignmaster.co.uk/2013/01/10/email-101-email-safe-fonts/">Email Safe Fonts</a>
+                            <a class="item" target="_blank"  href="#Gallery">Email Gallery</a>
                         </div>
                     </div>
                     <div class="item">
@@ -47,87 +55,112 @@
                             <a class="item">Forms and RSVPS</a>
                         </div>
                     </div>
-                    <div class="item">
-                        <b class="header">InClass Assignment</b>
-                        <div class="menu">
-                            <a class="item">Overview</a>
-                            <a class="item">Notes</a>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="book__content">
-            <div class="main-content" id="notes">
-                <h2>Class Outline</h2>
+            
+            <div class="main-content" id="notes-content">
+            <!-- OUTLINE -->
+                <h1 id="outline">Class Outline</h1>
+                <hr>
                 <h3>Over View (est 5-10min)</h3>
                     <ul>
                         <li>Take a Poll of Class<br>
-                         (see if people are more interested in learning HTML & CSS, or just how to build emails) </li>
-                        <li>Quickly show some beautiful emails(see here)</li>
+                         <em>(see if people are more interested in learning HTML & CSS, or just how to build emails)</em></li>
+                        <li>Quickly show some beautiful emails <!-- (<a href="#gallery">see here</a>) --></li>
                    </ul>
                 <!-- overview -->
                 <h3>HTML and Layouts (est 30min)</h3>
                     <!-- <em>how much html do they know?</em> -->
                     <ul>
-                        <li>Basic Tags: H1, H2, ect.</li>
-                        <li>Web Layouts: Divs, Sections, Articles</li>
-                        <li>Email Layouts: Tables(mention that sometags don't work on email</li>
+                        <li>Basic Tags: H1, H2, Ul, Li, ect.</li>
+                        <li>Web Layouts: divs, sections, articles</li>
+                        <li>Email Layouts: tables</li>
+                        <li>Briefly touch on tags that don't work on email</li>
                    </ul>
-                <h3 class="webvemail">resources<h3>
-                <strong>Exercise:</strong>
-                <p>Build out an invite using a table or divs</p>
+                <!-- <h3 class="webvemail">resources<h3> -->
+                
+                <p><strong>Exercise:</strong> Build out the layout for our demo using using a table or divs, depending on focus of the class</p>
                 <!-- layout -->
-                <h3>Images (est 10min)</h3>
+                <h3 id="images">Images (est 10min)</h3>
                     <ul>
-                        <li>When to use images in emails?</li>
-                        <li>File size increases the likelihood of your email being sent as span</li>
-                        <li>All image tag src attributes must have absolute http://... URLs as their values</li>
-                   </ul>
-                   <strong>Exercise:</strong>
-                    <p>Add an image as a banner to the email</p>
-                    <em>*Note never put critical info in an image, use the example of the email banner</em>
+                        <li>File size increases the likelihood of your email being sent to spam</li>
+                        <li>Show how to write an image tag</li>
+                        <li>With emails all image tag src attributes must lead to an online image, not to your images on your computer<br>
+                        </li>
+
+                    </ul>
+                    
+                    <p><strong>Exercise:</strong> Add an image as a banner to our page</p>
+                    <p><em>*Note never put critical info(text) in an image</em></p>
+                    
                 <!-- imgs -->
                 <h3>Styling part I:Inline Sytle/Basic CSS (est 15 min)</h3>
                     <ul>
                         <li>Explain briefly what styles are</li>
                         </li>
-                        <li>Change the font colors as a class using inline styles</li>
+                        <li>Change the font colors using inline styles</li>
                     </ul>
-                    <strong>Exercise:</strong>
-                    <p>Have them finish styling the rest of the email</p>
+                    
+                    <p><strong>Exercise:</strong> Have them finish styling the rest of the email</p>
                 <h3>Styling part II:Classes (est 15 min)</h3>
                 <ul>
                     <li>Go over Classes</li>
                     <li>Go over the difference between styling for the web vs styling for emails
                         <ul>
-                            <li>Inline Styles vs Classes </li>
-                            <li>Don’t use anything beyond CSS2 in email</li>
-                            <!-- <li>Email Client Style Guide</li> -->
+                            <li>Inline styles vs classes </li>
+                            <li>Do Not use anything beyond CSS2 in email</li>
+                            <li>Point them Web V. Email Best Practices Resource</li>
                         </ul>
                     </li>
                 </ul>
                 <!-- styling -->
                 <h3>Testing & Sending/Working with Different Email Clients:  (est 20 min)</h3>
                     <ul>
-                        <li>Use a free email previewer(probably: https://my.sendinblue.com) to preview email we've been building
+                        <li>Use a free email previewer(probably: <a target="_blank" href="https://my.sendinblue.com">sendinblue</a>) to preview email we've been building
                         </li>
                         <li>Go over the ways different email clients behave</li>
                         <li>Give this example:
                             <ul>
-                                <li>When we preview our email we'll see it looks strange in Outlook</li>
+                                <li>When we preview our email we'll see it looks strange in Outlook.</li>
                                 <li>
-                                 This is because we used margin 0 auto, to center everything which Outlook doesn't recognize     
+                                 This is because we used margin 0 auto to center everything. Outlook doesn't recognize margins.    
                                 </li>
-                                <li> We could fix this by removing the margin and adding padding left, but then we’ll have less consistency on mobile device. </li>
-                                <li>We could add classes instead of inline styles and add media queries, but sometimes browsers strips out external styles</li> 
+                                <li> We could fix this by removing the margin and adding padding left, but then it won't always be centered on mobile devices. </li>
+                                <li>We could add classes in and use media queries to change our padding depending on the width of the screen. However, sometimes browsers strip out classes.</li> 
+                                <li>The important thing is to know you're audience, test your emails, and prioritize what's most important.</li>
                             </ul> 
                         </li>
                     </ul>
-                    <strong>Final Exercise:</strong>
-                    <p>Upload a list(class emails) and send out our email</p>
-            </div>
-            <div class="main-content invisible" id="programs">
-                <h2>List of Email Building Programs</h2>
+                    
+                    <p><strong>Final Exercise:</strong> Upload a list(class emails) and send out our email</p>
+           
+        
+            <h1 id="Resources">Resources:</h1>
+            <p><em>These are guides I made that the students to go back to after the class</em></p>
+            <hr>
+                <h2 id="webVe">Web V. Email: Cheat Sheet<h2>
+                <h3>Website:</h3>
+                    <ul>
+                        <li>Always use classes to do your styling</li>
+                        <li>Write your CSS in an external page and link to it from your HTML </li>
+                        <li>Save out the images your using in the same folder as your html doc, the you got them from may take them down</li>
+                        <li>Use divs and sections to break up your page</li>
+                        <li>Use margins and padding and to position things, <!-- or if you're looking for something more advanced <span ahref="http://www.w3schools.com/bootstrap/bootstrap_grid_system.asp">Click here</span> to learn about grids. --></li>
+                        <li>Always include <!doctype html>, html tags, a head section and a body section; (<span><a href="http://fewdmaterials.github.io/boilerplates/">this website</a></span> has folders you can download with the correct file structure for web all set up.)</li>
+                    </ul>
+                <h3>Email:</h3>
+                <ul>
+                    <li>Do all your styles inline
+                    <li>Use classes very sparingly
+                    <li>If you have to use Classes, include them in a style tag at the head of your email (YOU CANNOT LINK TO ANYTHING OUTSIDE YOUR HTML FILE)
+                    <li>Only link to images online, for the same reason, you can only use the code from your HTML file</li>
+                    <li>Use tables within tables to position or you can use padding- don’t add margins to the content with in your tables
+                    <li>You don't need to include a header, some email clients will strip it out</li> 
+                </ul>   
+
+                <p><em>* A good rule of thumb is be ok with the way your email looks sans-classes</em></p>
+                <h2 id="programs">Email Building Programs</h2>
                 <h3>Free</h3>
                 <ul>
                     <li>
@@ -215,7 +248,8 @@ var DeferredFactory = function( func, scope ) {
     </div>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-    <script src='javascript/dist/bundle.js'></script>
+<!-- <script>hljs.initHighlightingOnLoad();</script>
+    <script src='javascript/dist/bundle.js'></script> -->
+    <script src='javascript/app.js'></script>
 </body>
 </html>

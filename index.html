@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='styles/semantic.min.css'>
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='styles/main.css'>
 </head>
 <body id="book">
@@ -16,17 +17,20 @@
             <div class="book__col">
                 <div class="book__colwrap ui menu inverted vertical">
                     <div class="item colheader colitem">
-                        <h1 class="title colheader__title">DBC INTRO COURSE</h1>
+                        <img width="100%" src="imgs/logo.jpg" >
                         <br>
                         <div class="description">Coding Emails</div><br>
                         <div class="description">By Samantha Vinci</div>
                         <br>
                     </div>
                     <div class="item">
-                        <b class="header">Class Notes</b>
+                        <b class="header">Class Overview</b>
                         <div class="menu">
-                            <a class="item"  href="#outline">Outline</a>
-                            <a href="http://svinci131.github.io/email_class_site/example" target="_blank" class="item">In Class Assignment</a>
+                            <a class="item"  href="#html">HTML and Layout</a>
+                            <a class="item"  href="#img">Images</a>
+                            <a class="item"  href="#css">CSS</a>
+                            <a class="item"  href="#testing">Testing & Sending</a>
+                         <a href="http://svinci131.github.io/email_class_site/example" target="_blank" class="item">In Class Assignment</a>
                             <a href="https://github.com/Svinci131/email_class_site/blob/master/example.html" target="_blank" class="item">In Class Assignment-Code</a>
 
                             
@@ -43,95 +47,247 @@
                             <a class="item" target="_blank"  href="#gallery">Email Gallery</a>
                         </div>
                     </div>
-                   <!--  <div class="item">
+                    <div class="item">
                         <b class="header">Extra Credit</b>
                         <div class="menu">
                             <a class="item">Responsive Emails</a>
                             <a class="item">Forms and RSVPS</a>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
             <div class="book__content">
             
             <div class="main-content" id="notes-content">
             <!-- OUTLINE -->
-                <h1 id="outline">Class Outline</h1>
-                <hr>
-                <h3>Overview (est 5-10min)</h3>
-                    <ul>
-                        <li>Take a Poll of Class<br>
-                         <em>(see if people are more interested in learning HTML & CSS, or just how to build emails)</em></li>
-                        <li>Quickly show some beautiful emails <!-- (<a href="#gallery">see here</a>) --></li>
-                   </ul>
-                <!-- overview -->
-                <h3>HTML and Layouts (est 30min)</h3>
-                    <!-- <em>how much html do they know?</em> -->
-                    <ul>
-                        <li>Basic Tags: H1, H2, Ul, Li, ect.</li>
-                        <li>Web Layouts: divs, sections, articles</li>
-                        <li>Email Layouts: tables</li>
-                        <li>Briefly touch on tags that don't work on email</li>
-                   </ul>
-                <!-- <h3 class="webvemail">resources<h3> -->
+                <h1>Class Outline</h1>
+               <!-- INTRO-->
+                <h3>Hi!</h3>
+
+                  <p>First off, Is anyone having trouble with sublime?</p>
+                  <p>I&#39m Sam, I&#39m a FEWD Instructor and an email marketer at Brooklyn Law School. My job mainly consists of designing, building and sending email invitations.</p>
+
+                  <h3>These are some of the emails I&#39ve built. 
+                    <span style="color:red">(picture)</span>
+                  </h3>
+                  <p>You can also use email blasts to share newsletters, promote a product or company or attract visitors to your website (I used an email blast as my wedding save the date).</p>
+
+                  <p>We&#39re here to support your learning, and help you learn to build, so please ask <strong>EVERY SINGLE</strong> question you have.</p>
+
+                  <p>Today we&#39ll choose from a couple of templates I've built for you guys, build it together, and then you&#39ll get to make one your own. But first...</p>
+                <!-- icebreaker-->
+                <h3>Let&#39s get to know each other</h3>
+                <ul>
+                    <li>What&#39s your name?</li>
+                    <li>What are you&#39re hoping to get out of this class?</li>
+                    <li>What&#39s something quirky about you?</li>
+                </ul>
+                <!-- icebreaker-->
+                <!-- INTRO -->
+                <h3 id="html">HTML: Building a the foundation of your house</h3>
+                <!-- <p>(Click <span style="color:red">here</span> to download the email we&#39re building together)</p> -->
+                <H4>Tags</H4>   
+                <ul>
+                    <li>Code is like a House</li>
+                    <li>HTML (Hyper Text Markup Language) uses <STRONG> tags</strong>to break up our content into different <strong>elements</strong> the same way walls divide a house into different rooms</li>
+                    
+                    <li>Example: 
+                        the <strong>&lt;h1&gt;</strong>, defines you&#39re largest heading
+                    </li>
+                    <pre><code>
+    &lt;h1&gt;Bon Jour World&lt;/h1&gt;</code>
+                    </pre>
+                    <li>Elements are defined by <strong>opening and closing tags</strong></li>
+                    <img src="imgs/slides/tagbreakdown.jpeg">
+                    <li>There are numbered headings from h1 to h6</li>
+                    <li>Without tags, our page would look just be a wall of text</li>
+                    <!-- <img src="imgs/slides/heading-tags.jpeg"> -->
+                </ul>
+                <h5>Some Key Tags:</h5>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>&lt;p&gt;</td>
+                            <td>paragraph, define you&#39re regular text</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;ul&gt;, &lt;li&gt;</td>
+                            <td>make a list</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;a&gt;</td>
+                            <td>anchor create links</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>You Do:</strong></p>
+                <p> In the file you downloaded, you&#39ll see a note that says "add header here" try adding a header and a pargraph underneath it. If you&#39re feeling creative use the <strong>&lt;strong&gt;</strong> tag to bold a few of the words.</p>
+
+                <!-- TAGS -->
+                <h5>Tables</h5>
+                <ul>
+                    <li>The whole structure of a table and of HTML is general is elements nested inside each other
+<!--  nesting example -->
+<pre>
+    <code>
+    &lt;p&gt;
+        &lt;span&gt;
+        &lt;/span&gt;
+    &lt;/p&gt;
+    </code>
+</pre>
+                    <li>Emails use the <strong>&lt;table&gt;, &lt;tr&gt;</strong> and <strong>&lt;td&gt;</strong> tags to create rows and columns for our content to go in</li>
+                   
+<!--         Table nesting example -->
+<pre>
+    <code>
+    &lt;table&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+    </code>
+</pre>
+                 </ul>
+                <h5>Table Tags</h5>
+                <!--  table tags table-->
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>&lt;table&gt;</td>
+                            <td>container for the table</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tbody&gt;</td>
+                            <td>container for the tables contents</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tr&gt;</td>
+                            <td>defines a row</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;td&gt;</td>
+                            <td>defines a column within a row</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><em>(Web pages, use a different kinds of tags called a "div" tag, but today we&#39ll just focus on emails)</em></p>
                 
-                <p><strong>Exercise:</strong> Build out the layout for our demo using a table or divs, depending on focus of the class</p>
-                <!-- layout -->
-                <h3 id="images">Images (est 10min)</h3>
+                <p><strong>You Do:</strong></p>
+                <p>In your file, there&#39s another note asking you to add some columns. Create two columns here and add a paragraph in each.<em> Bonus Points: Give each pargraph an h3 subheader</em> </p>
+
+                <!-- TAGS -->
+
+                <!-- IMAGES -->
+                <h3 id="img">Images</h3>
                     <ul>
-                        <li>File size increases the likelihood of your email being sent to spam</li>
-                        <li>Show how to write an image tag</li>
+                        <li>Inside the image tag we put a source <strong>attribute</strong></li>
+                        <li>Unlike almost every other element, image&#39s don&#39t need a closing tag</li>
+                        <li>To make our image fit to our cell give it a <strong>width</strong> of 100%</li>
+<pre>
+<code>
+    &lt;img width="100%"url="http://placekitten.com/"&gt;
+</code>
+</pre>
+                        <li>File size increases the likelihood of your email being sent to spam, so let&#39s keep it to a minimum</li>
                         <li>With emails all image tag src attributes must lead to an online image, not to your images on your computer<br>
                         </li>
 
                     </ul>
-                    
-                    <p><strong>Exercise:</strong> Add an image as a banner to our page</p>
-                    <p><em>*Note never put critical info(text) in an image</em></p>
-                    
-                <!-- imgs -->
-                <h3>Styling part I:Inline Style/Basic CSS (est 15 min)</h3>
+                    <p><strong>You Do:</strong></p>
+                     <p>In your file, add <a href="http://www.bio-logos.gr/wp-content/uploads/2014/09/bg_organic.jpg">this</a> image to your email, where it says "add image" and give it a width of 100%</p>
+                <!-- IMAGES -->
+
+                <!-- CSS -->
+                <h3 id="css">CSS: Decorating our House</h3>
                     <ul>
-                        <li>Explain briefly what styles are</li>
+                        <li>If HTML is the walls of the house, CSS (Cascading Style Sheets) is the paint, wallpaper and carpeting</li>
+                        <li>CSS controls the colors, sizes and fonts, on our site among other things</li>
+                        <li>Again, this works differently on the web, but in emails we write our CSS styles within the HTML tags like this</li>
+<pre>
+    <code>
+    &lt;p style="color: green; font-weight: bold; font-family: sans-serif"&gt;
+    &lt;/p&gt;
+    </code>
+</pre>
+                        <li><a href="http://devbootcamp.com/intro-to-html-css/#/38">Here</a> are some fun CSS properties you can play with
                         </li>
-                        <li>Change the font colors using inline styles</li>
                     </ul>
                     
-                    <p><strong>Exercise:</strong> Have them finish styling the rest of the email</p>
-                <h3>Styling part II:Classes (est 15 min)</h3>
-                <ul>
-                    <li>Go over Classes</li>
-                    <li>Go over the difference between styling for the web vs styling for emails
+                    <p><strong>You Do:</strong></p>
+                    <p>Go through you&#39re demo file and change the colors of our headers to blue and the background color of our footer to blue.
+                    </p>
+
+                    <h5>Positioning with CSS</h5>
                         <ul>
-                            <li>Inline styles vs classes </li>
-                            <li>Do Not use anything beyond CSS2 in email</li>
-                            <li>Point them Web V. Email Best Practices Resource</li>
+                            <li>To add space around the contents of your cells increase the <strong>cell padding</strong> in your <strong>table tag</strong>, like so:</li>
+<pre>
+    <code>
+        &lt;table cellspacing="0" cellpadding="10" border="0"&gt;
+    </code>
+</pre>
+
+                            <li>You can also set the width of your table, but Yahoo and Gmail will have a pre-made body element with its own width that your email will go inside of, <strong>so your table&#39s width should never be more than 98%</strong></li>
+
+                            <li>Adding <strong>"margin: 0 auto"</strong> your outer table will center it in on the page</li>
+                            
                         </ul>
-                    </li>
-                </ul>
+
+                        <p><em>Note: Styles like "padding" and "margins" can be very useful, but avoid adding them to your content, since some email clients like gmail will strip them out</em></p>
+
+                        <p><a href="http://templates.mailchimp.com/resources/email-client-css-support/">Here </a>is a list of CSS properties that don't work in different email clients (Yahoo, Gmail, ect.)</p>
+
+
+                    <!-- CSS -->
+                
                 <!-- styling -->
-                <h3>Testing & Sending/Working with Different Email Clients:  (est 20 min)</h3>
+                <h3 id="testing">Testing & Sending</h3>
                     <ul>
-                        <li>Use a free email previewer(probably: <a target="_blank" href="https://my.sendinblue.com">sendinblue</a>) to preview email we've been building
-                        </li>
-                        <li>Go over the ways different email clients behave</li>
-                        <li>Give this example:
+                        <li>Before we can send our email we’ll need a list of recipients and we’ll need to preview our email to make sure it looks good on every platform</li>
+
+                        <li>It’s worth thinking about your audience
                             <ul>
-                                <li>When we preview our email we'll see it looks strange in Outlook.</li>
-                                <li>
-                                 This is because we used margin 0 auto to center everything. Outlook doesn't recognize margins.    
-                                </li>
-                                <li> We could fix this by removing the margin and adding padding left, but then it won't always be centered on mobile devices. </li>
-                                <li>We could add classes in and use media queries to change our padding depending on the width of the screen. However, sometimes browsers strip out classes.</li> 
-                                <li>The important thing is to know your audience, test your emails, and prioritize what's most important.</li>
-                            </ul> 
+                                <li>Will they be looking at it one there phones?</li>
+                                <li>What email client are they using?</li>
+                                <li></li>
+                                <li>* When I do internal emails at work I have to make sure it looks good in Outlook, since that’s what the school uses</li>
+                            </ul>
                         </li>
+                        <li>There are several programs that will let you preview and send your emails</li>
+                        <li><span style="red">Here</span>a list of free ones</li>
+                        <li>Today, Let's use <a target="_blank" href="https://my.sendinblue.com">sendinblue</a>)
+                        </li>
+                        <li>We’ll make a new email, Copy and paste our HTML, and click preview, now we can edit it, upload a list and send</li>
                     </ul>
-                    
-                    <p><strong>Exercise:</strong> Upload a list(class emails) and send out our email</p>
-           
-                    <h2>Forms & RSVPS (Bonus)</h2>
-                  <!--    <p><strong>If there's extra time:</strong>Forms & RSVPS</p> -->
+                       
+                <h3>Ask Me Questions!!</h3>
+                <h3>OMG, Let’s Build</h3>
+                    <p>Click <span style="color: red">here<span>, to download a blank email template and start building your own email or select one of the samples from the beginning and try building that.</span></p>
+
+                <h3>Take-Aways</h3>
+                <ul>
+                    <li>Grit, coding can be tough stick with it!</li>
+                    <li>Test, Test, Test, Things aren’t always as they appear</li>
+                    <li>Inspect Element!!! , If something doesn’t work the browser will tell you why!</li>
+                </ul>
+
+                <h3>Next Steps</h3> 
+
+                The internet is full of useful info and there are lots of other great <span style="color: red">DBC courses!</span> and check out the resources and extracredit projects for this workshop. 
+
+            <h1 id="Resources">Extra Credit:</h1>  
+              
+            <p>Please, email me if you complete one of these assignments or have questions</p>
+            <ol>
+                <li>Build an web verion of your email using divs and/or classes</li>
+                <li>Responsive Emails, get your email to look great on every device</li>
+                <li>Forms, allow your email recipients to RSVP to an event or Subscribe to your site</li>
 
                     
             <h1 id="Resources">Resources:</h1>
@@ -154,7 +310,7 @@
                     <li>If you have to use Classes, include them in a style tag at the head of your email (YOU CANNOT LINK TO ANYTHING OUTSIDE YOUR HTML FILE)
                     <li>Only link to images online, for the same reason, you can only use the code from your HTML file</li>
                     <li>Use tables within tables to position or you can use padding- don’t add margins to the content within your tables
-                    <li>You don't need to include a header, some email clients will strip it out</li> 
+                    <li>You don&#39t need to include a header, some email clients will strip it out</li> 
                 </ul>   
 
                 <p><em>* A good rule of thumb is be ok with the way your email looks sans-classes</em></p>
@@ -191,7 +347,7 @@
                    </div> -->
                  <div class="img-wrapper">
                     <img src="imgs/invite01.jpg" >
-                    <img src="imgs/invite02.jpg">
+                    <a href="https://github.com/Svinci131/email_class_site/blob/master/example.html"<img src="imgs/invite02.jpg"></a>
 
                   </div>
                     <h3>NewsLetters</h3>

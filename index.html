@@ -7,8 +7,8 @@
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='styles/semantic.min.css'>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai.min.css">
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='styles/main.css'>
 </head>
 <body id="book">
@@ -19,7 +19,7 @@
                     <div class="item colheader colitem">
                         <img width="100%" src="imgs/logo.jpg" >
                         <br>
-                        <div class="description">Coding Emails</div><br>
+                        <div class="description">Intro to Coding Emails</div><br>
                         <div class="description">By Samantha Vinci</div>
                         <br>
                     </div>
@@ -30,12 +30,20 @@
                             <a class="item"  href="#img">Images</a>
                             <a class="item"  href="#css">CSS</a>
                             <a class="item"  href="#testing">Testing & Sending</a>
-                         <a href="http://svinci131.github.io/email_class_site/example" target="_blank" class="item">In Class Assignment</a>
-                            <a href="https://github.com/Svinci131/email_class_site/blob/master/example.html" target="_blank" class="item">In Class Assignment-Code</a>
-
-                            
                         </div>
                     </div>
+                    <div class="item">
+                        <b class="header">In Class Assignments</b>
+                        <div class="menu">
+                           <a href="http://svinci131.github.io/email_class_site/example" target="_blank" class="item">Invite-Finished</a>
+                            <a href="https://github.com/Svinci131/email_class_site/blob/master/example.html" target="_blank" class="item">Invite-Download</a>
+                             <a href="http://svinci131.github.io/email_class_site/example02" target="_blank" class="item">Newsletter-Finished</a>
+                            <a href="https://github.com/Svinci131/email_class_site/blob/master/example02.html" target="_blank" class="item">Newsletter-Download</a>
+                            <a href="#build" class="item">Build Your Own</a>
+                            <a href="https://github.com/Svinci131/email_class_site/blob/master/blank.html" target="_blank" class="item">Blank Template</a>
+                         </div>
+                    </div>
+
                     <div class="item">
                         <b class="header">Resources</b>
                         <div class="menu">
@@ -44,14 +52,15 @@
                             <!-- <a href="#layoutChart" class="item">Table Layout Gra</a> -->
                             <a href="#programs" class="item">Email Building Programs</a>
                             <a class="item" target="_blank"  href="http://blog.campaignmaster.co.uk/2013/01/10/email-101-email-safe-fonts/">Email Safe Fonts</a>
-                            <a class="item" target="_blank"  href="#gallery">Email Gallery</a>
+                            <a class="item" href="#gallery">Email Gallery</a>
+
                         </div>
                     </div>
                     <div class="item">
                         <b class="header">Extra Credit</b>
                         <div class="menu">
-                            <a class="item">Responsive Emails</a>
-                            <a class="item">Forms and RSVPS</a>
+                            <a a href="#extraCredit" class="item">Responsive Emails</a>
+                            <a a href="#extraCredit" class="item">Forms and RSVPS</a>
                         </div>
                     </div>
                 </div>
@@ -70,6 +79,18 @@
                   <h3>These are some of the emails I&#39ve built. 
                     <span style="color:red">(picture)</span>
                   </h3>
+                  <div class ="image-roll--three"style="background-color:red"> 
+                    
+                        <div style="background-image: url(imgs/bls/bls01.jpg)" class="image-roll__col image-roll__col-2">
+                        </div>
+                        <div class="image-roll__col image-roll__col-2">
+                             <div style="background-image: url(imgs/bls/bls01-03.jpg)" class="image-roll__three-top image-roll__img"></div>
+                            <div style="background-image: url(imgs/bls/bls02.jpg)" class="image-roll__three-bottom image-roll__img"></div>
+                        </div>
+                    
+                  </div>
+               
+
                   <p>You can also use email blasts to share newsletters, promote a product or company or attract visitors to your website (I used an email blast as my wedding save the date).</p>
 
                   <p>We&#39re here to support your learning, and help you learn to build, so please ask <strong>EVERY SINGLE</strong> question you have.</p>
@@ -98,7 +119,15 @@
     &lt;h1&gt;Bon Jour World&lt;/h1&gt;</code>
                     </pre>
                     <li>Elements are defined by <strong>opening and closing tags</strong></li>
-                    <img src="imgs/slides/tagbreakdown.jpeg">
+                 <!--    <div class="img-wrapper"> -->
+                     <div class="image-roll image-roll--three">
+                        <div class="image-roll__col image-roll__col-3">
+                            <div style="background-image: url(imgs/slides/tagbreakdown.png)" class="image-roll__three-left image-roll__img"></div>
+                        </div>
+                    
+                   </div>
+                     <!--    <img src="imgs/slides/tagbreakdown.png">
+                    </div> -->
                     <li>There are numbered headings from h1 to h6</li>
                     <li>Without tags, our page would look just be a wall of text</li>
                     <!-- <img src="imgs/slides/heading-tags.jpeg"> -->
@@ -249,46 +278,35 @@
                 <!-- styling -->
                 <h3 id="testing">Testing & Sending</h3>
                     <ul>
-                        <li>Before we can send our email we’ll need a list of recipients and we’ll need to preview our email to make sure it looks good on every platform</li>
+                        <li>Before we can send our email we'll need a <strong>list of recipients</strong> and we'll need to preview our email to make sure it looks good <strong>on every platform</strong></li>
 
-                        <li>It’s worth thinking about your audience
+                        <li>It's worth thinking about your audience
                             <ul>
-                                <li>Will they be looking at it one there phones?</li>
-                                <li>What email client are they using?</li>
-                                <li></li>
-                                <li>* When I do internal emails at work I have to make sure it looks good in Outlook, since that’s what the school uses</li>
+                                <li>Will they be looking at it on their phones or computers?</li>
+                                <li>What <strong>email client</strong> are they using?</li>
+                                <li><em>*When I do internal emails at work I have to make sure it looks good in Outlook, since that's what the school uses</em></li>
                             </ul>
                         </li>
-                        <li>There are several programs that will let you preview and send your emails</li>
-                        <li><span style="red">Here</span>a list of free ones</li>
-                        <li>Today, Let's use <a target="_blank" href="https://my.sendinblue.com">sendinblue</a>)
+                        <li>There are several programs that will let you preview and send your emails <em>(There's a list under resources)</em></li>
+                        <li>Today, Let's use <a target="_blank" href="https://my.sendinblue.com">sendinblue</a>
                         </li>
-                        <li>We’ll make a new email, Copy and paste our HTML, and click preview, now we can edit it, upload a list and send</li>
+                        <li>We'll make a new email, copy and paste our HTML, and click preview, now we can edit it, upload a list and send</li>
                     </ul>
                        
                 <h3>Ask Me Questions!!</h3>
-                <h3>OMG, Let’s Build</h3>
-                    <p>Click <span style="color: red">here<span>, to download a blank email template and start building your own email or select one of the samples from the beginning and try building that.</span></p>
+                <h3 id="build">OMG, Let's Build</h3>
+                    <p>Click <a href="https://github.com/Svinci131/email_class_site/blob/master/blank.html">here</a>, to download a blank email template and start building your own email or select one of the samples from the beginning and try building that.</span></p>
 
                 <h3>Take-Aways</h3>
                 <ul>
                     <li>Grit, coding can be tough stick with it!</li>
-                    <li>Test, Test, Test, Things aren’t always as they appear</li>
-                    <li>Inspect Element!!! , If something doesn’t work the browser will tell you why!</li>
+                    <li>Test, Test, Test, Things aren't always as they appear</li>
+                    <li>Inspect Element!!! , If something doesn't work the browser will tell you why!</li>
                 </ul>
 
                 <h3>Next Steps</h3> 
 
-                The internet is full of useful info and there are lots of other great <span style="color: red">DBC courses!</span> and check out the resources and extracredit projects for this workshop. 
-
-            <h1 id="Resources">Extra Credit:</h1>  
-              
-            <p>Please, email me if you complete one of these assignments or have questions</p>
-            <ol>
-                <li>Build an web verion of your email using divs and/or classes</li>
-                <li>Responsive Emails, get your email to look great on every device</li>
-                <li>Forms, allow your email recipients to RSVP to an event or Subscribe to your site</li>
-
+                <p>The internet is full of useful info and there are lots of other great <span style="color: red">DBC courses!</span> and check out the resources and extracredit projects for this workshop.</p>
                     
             <h1 id="Resources">Resources:</h1>
             <p><em>These are guides I made that the students to go back to after the class</em></p>
@@ -300,7 +318,7 @@
                         <li>Write your CSS in an external page and link to it from your HTML </li>
                         <li>Save out the images you are using in the same folder as your html doc, the you got them from may take them down</li>
                         <li>Use divs and sections to break up your page</li>
-                        <li>Use margins and padding and to position things, <!-- or if you're looking for something more advanced <span ahref="http://www.w3schools.com/bootstrap/bootstrap_grid_system.asp">Click here</span> to learn about grids. --></li>
+                        <li>Use margins and padding and to position things</li>
                         <li>Always include <!doctype html>, html tags, a head section and a body section; (<span><a href="http://fewdmaterials.github.io/boilerplates/">this website</a></span> has folders you can download with the correct file structure for web all set up.)</li>
                     </ul>
                 <h3>Email:</h3>
@@ -336,18 +354,10 @@
                     </ul>
                 <h2 id="gallery">Email Gallery</h2>
                 <h3>Invites</h3>
-                  <!--  <div class="image-roll image-roll--three breakout-image">
-                        <div class="image-roll__col image-roll__col-1">
-                            <div style="background-image: url(https://scontent-iad3-1.cdninstagram.com/hphotos-xta1/t51.2885-15/e15/12080545_1091355724208100_1758630671_n.jpg)" class="image-roll__three-top image-roll__img"></div>
-                            <div style="background-image: url(https://scontent-iad3-1.cdninstagram.com/hphotos-xap1/t51.2885-15/e15/12145187_923914534351469_902481808_n.jpg)" class="image-roll__three-bottom image-roll__img"></div>
-                        </div>
-                        <div class="image-roll__col image-roll__col-3 image-roll__col-3reverseborder">
-                            <div style="background-image: url(https://scontent-iad3-1.cdninstagram.com/hphotos-xta1/t51.2885-15/e15/12142291_998584560163485_1311006870_n.jpg)" class="image-roll__three-left image-roll__img"></div>
-                        </div>
-                   </div> -->
                  <div class="img-wrapper">
+                    
                     <img src="imgs/invite01.jpg" >
-                    <a href="https://github.com/Svinci131/email_class_site/blob/master/example.html"<img src="imgs/invite02.jpg"></a>
+                    <a href="https://github.com/Svinci131/email_class_site/blob/master/example.html"><img src="imgs/invite02.jpg"></a>
 
                   </div>
                     <h3>NewsLetters</h3>
@@ -358,9 +368,16 @@
                 
             </div>
 
-            <!-- <h3>Extra Credit</h3>
+
+            <h1 id="extraCredit">Extra Credit:</h1>  
+              
+            <p>Please, email me if you complete one of these assignments or have questions</p>
+            <ol>
+                <li>Build an web verion of your email using divs and/or classes</li>
+                <li>Responsive Emails, get your email to look great on every device</li>
+                <li>Forms, allow your email recipients to RSVP to an event or Subscribe to your site</li>
             <p><em>
- -->
+
     </div>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>

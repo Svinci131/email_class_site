@@ -3,7 +3,6 @@
 <head>
     <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
     <title>Notes</title>
-   <!--  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> -->
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='styles/semantic.min.css'>
@@ -19,9 +18,9 @@
                     <div class="item colheader colitem">
                         <img width="100%" src="imgs/logo.jpg" >
                         <br>
-                        <div class="description">Intro to Coding Emails</div><br>
-                        <div class="description">By Samantha Vinci</div>
-                        <br>
+                        <h3 class="class_title">Build an Email Marketing Newsletter in HTML & CSS</h3>
+                        <!-- <div class="description">Content Contribution From Samantha Vinci</div>
+ -->                        <br>
                     </div>
                     <div class="item">
                         <b class="header">Class Overview</b>
@@ -70,22 +69,36 @@
             
             <div class="main-content" id="notes-content">
             <!-- OUTLINE -->
-                <h1>Class Outline</h1>
+                <h1>Class Notes</h1>
                <!-- INTRO-->
                 <h3>Hi!</h3>
 
-                  <p>First off, Is anyone having trouble with sublime?</p>
-                  <p>I&#39m Sam, I&#39m a FEWD Instructor and an email marketer at Brooklyn Law School. My job mainly consists of designing, building and sending email invitations.</p>
+                  <p>I&#39m Sam, I teach front end web development and I'm an email marketer at Brooklyn Law School. My job mainly consists of designing, building and sending out email blasts.</p>
 
-                  <h3>These are some of the emails I&#39ve built. 
-                  </h3>
+                  <p>Today, we'll learn how to build well laid-out email newsletter through the use of tags and tables and then you'll create one on your own. 
+
+                  <h5>Agenda:</h5>
+                    <ul>
+                        <li>Class Introduction (15 min)</li>
+                        <li>HTML & Layouts (20 min)</li>
+                        <li>Adding Images to Emails (10 min)</li>
+                        <li>Styling (15 min)</li>
+                        <li>Sending & Testing (15 min)</li>
+                        <li>Build Your Email using HTML and CSS (45 min)</li>
+                    </ul>
+
+                  <p>We&#39re here to support your learning, and help you learn to build, so please ask <strong>EVERY SINGLE</strong> question you have.</p>
+
+
+                  <p>You can use email blasts to send out invitations and  newsletters, promote your product or company or attract visitors to your website (I also used an email blast as my wedding save the date).</p>
+
+                  <h5>These are some of the emails I&#39ve built. 
+                  </h5><br>
                   <div class ="image-roll--three"style="background-color:red"> 
                     
                         <div style="background-image: url(imgs/bls/bls01.jpg)" class="image-roll__col image-roll__col-2">
                         </div>
                         <div style="border: 1px solid black; background-image: url(imgs/bls/xmas_invite_final.jpg)"class="image-roll__col image-roll__col-2">
-                       <!--       <div style="background-image: url(imgs/bls/bls01-03.jpg)" class="image-roll__three-top image-roll__img"></div>
-                            <div style="background-image: url(imgs/bls/bls02.jpg)" class="image-roll__three-bottom image-roll__img"></div> -->
                         </div>
                     
                   </div>
@@ -100,12 +113,7 @@
                   </div>
 
                   <br> 
-
-                  <p>You can also use email blasts to share newsletters, promote a product or company or attract visitors to your website (I used an email blast as my wedding save the date).</p>
-
-                  <p>We&#39re here to support your learning, and help you learn to build, so please ask <strong>EVERY SINGLE</strong> question you have.</p>
-
-                  <p>Today we'll build one template together, and then you'll get to either make one your own. But first...</p>
+               
                 <!-- icebreaker-->
                 <h3>Let&#39s get to know each other</h3>
                 <ul>
@@ -114,6 +122,8 @@
                     <li>What&#39s something quirky about you?</li>
                 </ul>
                 <!-- icebreaker-->
+                <h3>Before we start is anyone having trouble with sublime?</h3>
+
                 <!-- INTRO -->
                 <h3 id="html">HTML: Building a the foundation of your house</h3>
                 <!-- <p>(Click <span style="color:red">here</span> to download the email we&#39re building together)</p> -->
@@ -137,7 +147,7 @@
                     
                    </div>
                     <li>There are numbered headings from h1 to h6</li>
-                    <li>Without tags, our page would look just be a wall of text</li>
+                    <li>Without tags, our page would just be a wall of text</li>
                 </ul>
                 <h5>Some Key Tags:</h5>
 
@@ -159,12 +169,12 @@
                 </table>
 
                 <p><strong>You Do:</strong></p>
-                <p> In the file you downloaded, you&#39ll see a note that says "add header here" try adding a header and a pargraph underneath it. If you&#39re feeling creative use the <strong>&lt;strong&gt;</strong> tag to bold a few of the words.</p>
+                <p> In the file you downloaded, (click <a href="https://raw.githubusercontent.com/Svinci131/email_class_site/master/example02.html" download target="_blank" class="item"> here </a> if you haven't already) you'll see a note that says "add header here" try adding a header and a pargraph underneath it. If you&#39re feeling creative use the <strong>&lt;strong&gt;</strong> tag to bold a few of the words.</p>
 
                 <!-- TAGS -->
                 <h5>Tables</h5>
                 <ul>
-                    <li>The whole structure of a table and of HTML is general is elements nested inside each other
+                    <li>The whole structure of a table and of HTML in general is elements nested inside each other
 <!--  nesting example -->
 <pre>
     <code>
@@ -213,7 +223,7 @@
                     </tbody>
                 </table>
 
-                <p><em>(Web pages, use a different kinds of tags called a "div" tag, but today we&#39ll just focus on emails)</em></p>
+                <p><em>(Web pages use a different kind of tags called a "div" tag to divide the page into sections, but today we&#39ll just focus on emails)</em></p>
                 
                 <p><strong>You Do:</strong></p>
                 <p>In your file, there&#39s another note asking you to add some columns. Create two columns here and add a paragraph in each.</p>
@@ -236,7 +246,7 @@
 
                     </ul>
                     <p><strong>You Do:</strong></p>
-                     <p>In your file, add <a href="http://www.bio-logos.gr/wp-content/uploads/2014/09/bg_organic.jpg">this</a> image to your email, where it says "add image" and give it a width of 100%</p>
+                     <p>In your file, add <a href="http://www.bio-logos.gr/wp-content/uploads/2014/09/bg_organic.jpg" target="_blank">this</a> image to your email, where it says "add image" and give it a width of 100%</p>
                 <!-- IMAGES -->
 
                 <!-- CSS -->
@@ -251,12 +261,12 @@
     &lt;/p&gt;
     </code>
 </pre>
-                        <li><a href="http://devbootcamp.com/intro-to-html-css/#/38">Here</a> are some fun CSS properties you can play with
+                        <li><a href="http://devbootcamp.com/intro-to-html-css/#/38" target="_blank">Here</a> are some fun CSS properties you can play with
                         </li>
                     </ul>
                     
                     <p><strong>You Do:</strong></p>
-                    <p>Go through you&#39re demo file and change the colors of our h1 headers to blue and the backgruond color of our bottom row to blue. 
+                    <p>Go through you&#39re demo file and change the colors of our h1 headers to blue and the background color of our bottom row to blue. 
                     </p>
 
                     <h5>Positioning with CSS</h5>
@@ -276,7 +286,7 @@
 
                         <p><em>Note: Styles like "padding" and "margins" can be very useful, but avoid adding them to your content, since some email clients like gmail will strip them out</em></p>
 
-                        <p><a href="http://templates.mailchimp.com/resources/email-client-css-support/">Here </a>is a list of CSS properties that don't work in different email clients (Yahoo, Gmail, ect.)</p>
+                        <p><a href="http://templates.mailchimp.com/resources/email-client-css-support/" target="_blank">Here </a>is a list of CSS properties that don't work in different email clients (Yahoo, Gmail, ect.)</p>
 
 
                     <!-- CSS -->
@@ -301,7 +311,7 @@
                        
                 <h3>Ask Me Questions!!</h3>
                 <h3 id="build">OMG, Let's Build</h3>
-                    <p>Click <a href="https://github.com/Svinci131/email_class_site/blob/master/blank.html">here</a>, to download a blank email template and start building your own email or select one of the samples from the beginning and try building that.</span></p>
+                    <p>Click <a href="https://raw.githubusercontent.com/Svinci131/email_class_site/master/blank.html" download target="_blank">here</a>, to download a blank email template and start building your own email or select one of the samples from the beginning and try building that.</span></p>
 
                 <h3>Take-Aways</h3>
                 <ul>
@@ -312,10 +322,9 @@
 
                 <h3>Next Steps</h3> 
 
-                <p>The internet is full of useful info and there are lots of other great <span style="color: red">DBC courses!</span> and check out the resources and extracredit projects for this workshop.</p>
+                <p>The internet is full of useful info and there are lots of other great <a href="http://devbootcamp.com/?utm_source=Google&utm_medium=cpc&utm_campaign=NYC+Metro&utm_content=Bootcamp+-+Developer&utm_term=developer%20bootcamp&gclid=CjwKEAiA58a1BRDw6Jan_PLapw8SJABJz-ZWi99LpkoqOD7lKTPi0ooz-GDH5UrpRUdsdK1YdaE0kRoCOZLw_wcB" target="_blank">DBC courses!</a> and check out the resources and extracredit projects for this workshop.</p>
                     
             <h1 id="Resources">Resources:</h1>
-            <p><em>These are guides I made that the students to go back to after the class</em></p>
             <hr>
                 <h2 id="webVe">Web V. Email: Cheat Sheet<h2>
                 <h3>Website:</h3>
@@ -379,11 +388,12 @@
               
             <p>Please, email me if you complete one of these assignments or have questions</p>
             <ol>
-                <li>Build an web verion of your email using divs and/or classes</li>
+                <li>Build an web version of your email using divs and/or classes</li>
                 <li>Responsive Emails, get your email to look great on every device</li>
                 <li>Forms, allow your email recipients to RSVP to an event or Subscribe to your site</li>
-            <p><em>
-
+            </ol>
+            <br>
+            <div class="credit"><p><strong><em>Content Contribution From <a href="samanthavinci.com">Samantha Vinci</a></p></em></strong></div>
     </div>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
